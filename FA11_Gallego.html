@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<title> Gallego-FA 11 </title>
+<body>
+	<script>
+		var f = prompt("Kindly input an integer of your choice (1): ", " ");
+        var s = prompt("Kindly input an integer of your choice (2): ", " ");
+        var t = prompt("Kindly input an integer of your choice (3): ", " ");
+        
+        determineTriangle(f,s,t);
+        
+        function determineTriangle(a,b,c) {
+        if (a==b && b==c) {
+        alert( "Your triangle is EQUILATERAL!");
+        }
+        else if (a==b || b==c || c==a) {
+        alert ( "Your triangle is ISOSCELES!");
+        }
+        else {
+        alert ( "Your triangle is SCALENE!");
+        }
+        }
+
+	</script>
+</body>
+</html> 
+
+
+
+
+
