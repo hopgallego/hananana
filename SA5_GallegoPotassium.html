@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Welcome to My ChocoShop</title>
+    <!-- type in the necessary meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+      span {color: blue; text-decoration:underline}
+      button {width: 100px; padding: 5px; background: pink;}
+	</style>
+
+	</head>
+<body>
+	<h1> Welcome to My ChocoShop </h1>
+	<h2> Please select from the following chocolates: </h2>
+	<!--- provide your own 3 items and their prices in the list --->
+	<ol>
+		<li> CHOCO MUCHO price: Php 50.00 </li>
+		<li> TOBLERONE price: Php 250.00 </li>
+		<li> FERRERO ROCHER price: Php 450.00 </li>
+	</ol>
+	<!-- the following will be used to display purchase information -->
+    <p> Item selected : <span id="item"> </span> </p>
+	<p> Qty bought : <span id="qty"> </span> </p>
+	<p> Amount to pay for the item: <span id="bill"> </span> </p>
+	<p> Current Total Bill: <span id="tbill"> </span> </p>
+	<button onclick = "buyItem()"> Buy an Item </button>
+	<button onclick = "clr()"> Clear </button>
+    
+    <script>
+    	/* do not forget to include comments in your answer */
+    	function buyItem(item){ // asks the user's desired item number
+        	var buy = prompt("Please input the item number of your choice (1, 2, 3)","");
+            var p1 = 50.00; // price of the first item
+            var p2 = 250.00; // price of the second item
+            var p3 = 450.00; // price of the third item
+            var tbill;
+            var q;
+            
+            if (buy == '1'){ // returns the details of choco mucho when the user presses 1 as the desired item number
+            document.getElementById("item").innerHTML = "CHOCO MUCHO";
+            q = prompt("How many chocolate(s) would you like to buy?",""); // asks the user the quantity of the desired item to be bought
+            document.getElementById("qty").innerHTML =  q;
+            document.getElementById("bill").innerHTML = "Php " + p1;
+            tbill = (p1*q);
+            document.getElementById("tbill").innerHTML = "Php " + tbill;
+            
+            
+            } else if (buy == '2'){ // returns the details of toblerone when the user presses 1 as the desired item number
+            document.getElementById("item").innerHTML = "TOBLERONE";
+            q = prompt("How many chocolate(s) would you like to buy?","");
+            document.getElementById("qty").innerHTML =  q;
+            document.getElementById("bill").innerHTML = "Php " + p2;
+            tbill = (p2*q);
+            document.getElementById("tbill").innerHTML = "Php " + tbill;
+            
+            } else if (buy == '3') { // returns the details of ferrero rocher when the user presses 1 as the desired item number
+            document.getElementById("item").innerHTML = "FERRERO";
+            q = prompt("How many chocolate(s) would you like to buy?","");
+            document.getElementById("qty").innerHTML =  q;
+            document.getElementById("bill").innerHTML = "Php " + p3;
+            tbill = (p3*q);
+            document.getElementById("tbill").innerHTML = "Php " + tbill;
+            
+            } else {  //alerts the user for wrong input 
+            	alert ("Input is invalid. Please try again.");
+            }
+          }
+            
+            function clr(){ // a function that sets every input for item, quantity, bill, and total bill to blank
+            document.getElementById("item").innerHTML = " ";
+            document.getElementById("qty").innerHTML =  " ";
+            document.getElementById("bill").innerHTML = " ";
+            document.getElementById("tbill").innerHTML = " ";
+            }
+            
+    </script>
+</body>
+
+</html>
