@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<title> Gallego - FA 12 </title>
+<body>
+
+<p>Hello! Please enter a number between 2 and 10: </p>
+
+<input id="num1"> by <input id="num2"><br><br>
+
+<button type="button" onclick="multiply()"> Click here !!</button><br><br>
+
+<table border= "1 px" id="table"></table>
+
+<script>
+	function multiply() {
+	var x = document.getElementById("num1").value;
+    var y = document.getElementById("num2").value;
+    
+  if (x <= 2 || x >= 10 || y <= 2 || y >= 10) {
+ 	 alert("Oops! Input value is ivalid. Try again.");
+     return false;
+  	}
+   
+    let table = "<table>";
+    
+		for (var r = 1; r <= x; r++) {
+  			table += "<tr>";
+  
+  			for (var re = 1; re <= y; re++) {
+    			table += "<td>" + r * re + "</td>";
+  } 
+  			table += "</tr>";
+}
+document.getElementById("table").innerHTML=table;
+}
+</script>
+</body>
+</html> 
