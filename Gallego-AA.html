@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      var mRNA = prompt("Please input mRNA sequence: ");
+      var start = mRNA.indexOf("AUG");
+      var amAcdArray = [];
+      var cdnArray = [];
+        
+      if (start === -1) {
+        document.write("Can't find start codon. Please try again.");
+      } else {
+        var i = 0;
+        var cdn = "";
+        var readingFrame = mRNA.slice(start);
+
+        while (i < readingFrame.length - 3) {
+          cdn = readingFrame.slice(i, i + 3);
+          cdnArray.push(cdn);
+          i += 3;
+        }
+
+        for (var i = 0; i < cdnArray.length; i++) {
+          var amAcd = "";
+
+          switch (cdnArray[i]) {
+            case "CUC":
+            case "CUA":
+            case "UUA":
+            case "UUG":
+            case "CUG":
+            case "CUU":
+              amAcd = "Leu";
+              break;
+            case "UAU":
+            case "UAC":
+              amAcd = "Tyr";
+              break;
+            case "AUG":
+              amAcd = "Met";
+              break;
+            case "CCC":
+            case "CCA":
+            case "CCU":
+            case "CCG":
+              amAcd = "Pro";
+              break;      
+            case "UUU":
+            case "UUC":
+              amAcd = "Phe";
+              break;
+            case "UCG":
+            case "UCU":
+            case "UCA":
+            case "UCC":
+              amAcd = "Ser";
+              break;
+            case "ACC":
+            case "ACG":
+            case "ACU":
+            case "ACA":
+              amAcd = "Thr";
+              break;
+            case "UGC":
+            case "UGU":
+              amAcd = "Cys";
+              break;
+            case "GCC":
+            case "GCU":
+            case "GCG":
+            case "GCA":
+              amAcd = "Ala";
+              break;
+            case "UGG":
+              amAcd = "Trp";
+              break;
+            case "AUC":
+            case "AUU":
+            case "AUA":
+              amAcd = "Ile";
+              break;
+            case "GUG":
+            case "GUU":
+            case "GUA":
+            case "GUC":
+              amAcd = "Val";
+              break;
+            case "UAG":
+            case "UGA":
+            case "UAA":
+              amAcd = "STOP";
+              break;
+            default:
+              amAcd = "Unknown";
+              break;
+          }
+
+          amAcdArray.push(amAcd);
+              if(amAcd === "STOP"){
+                break;
+              }
+        }
+            document.write('[' + cdnArray.map(cdn => `"${cdn}"`).join(', ') + ']<br>');
+            document.write('<br>' + amAcdArray.map((acid, index) => `${cdnArray[index]} --> ${acid}`).join('<br>') + '</p>');
+      }
+    </script>
+  </body>
+</html>
