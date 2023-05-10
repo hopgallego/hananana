@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Kstudies Sign Up Form</title>
+    <link rel="icon" href="pie-chart.png">
+</head>
+<body>
+<style>
+	body {
+        background-color: #598556;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        font-family: cursive;
+    }
+    
+    legend {
+        margin-bottom: 20px;
+        color: #598556;
+        background-color: #fff8e7;
+        font-size: 66px;
+        border-radius: 50px;
+        border: 3px solid white;
+        padding: 17px;
+        filter: drop-shadow(0px 0px 7px black);
+        transition: transform 0.8s;
+	    transition-timing-function: ease;
+    }
+    
+    legend:hover { 
+	    transform: scale(1.05);
+        filter: drop-shadow(0px 0px 6px black);
+        
+    }
+    
+    img {
+        transition: transform 0.8s;
+	    transition-timing-function: ease;
+    }
+    
+    img:hover { 
+	    transform: rotate(360deg);
+    }
+    
+    .fset {
+        display: flex;
+        justify-content:center;
+        height: 885px;
+        width: 57%;
+        font-size: smaller;
+        filter: drop-shadow(0px 0px 10px black);
+        background-image: radial-gradient(#DAF7A6, #8A9A5B);
+        color: white;
+        border-radius: 58px;
+        position: relative;
+    }
+    
+    
+    input {
+        font-size: 18px;
+        background-color: transparent;
+        border: 3px solid white;
+        border-radius: 30px;
+        padding: 14px;
+	    transition: transform 0.7s;
+	    transition-timing-function: ease;
+    }
+    
+    input:hover { 
+	   transform: scale(0.96);
+        filter: drop-shadow(0px 0px 12px white);
+        cursor: pointer;
+    }
+    
+    .text {
+        color: white;
+    }
+    
+    textarea {
+        font-size: 18px;
+        color: white;
+        background: none;
+        border: 3px solid white;
+        border-radius: 30px;
+        padding: 38px;
+        transition: transform 0.7s;
+	    transition-timing-function: ease;
+    }
+    
+    textarea:hover { 
+	    transform: scale(0.96);
+        filter: drop-shadow(0px 0px 12px white);
+        cursor: pointer;
+    }
+    
+    select {
+        background-color: transparent;
+        border: 3px solid white;
+        border-radius: 30px;
+        padding: 10px;
+        transition: transform 0.7s;
+	    transition-timing-function: ease;
+    }
+    
+     select:hover { 
+	    transform: scale(0.96);
+        filter: drop-shadow(0px 0px 12px white);
+        cursor: pointer;
+    }
+    
+    
+    ::placeholder {
+    color: white;
+    }
+    
+    .button {
+        background-color: #8A9A5B;
+        padding: 15px;
+        font-size: 20px;
+        color: white;
+        width: 30%;
+    }
+    
+    .gender {
+        font-size: 18px;
+        color: black;
+    }
+    
+    .rst {
+        width: 57%;
+        background-color: #fff8e7;
+        color: #598556;
+        font-size: 20px;
+        border-radius: 30px;
+    }
+        
+</style>
+<center>
+<fieldset class ="fset">
+<legend><img style="width: 80px" src="pie-chart.png"> KStudies </legend>
+	<form>
+    	<input type= "text" id="userName" placeholder = "Name" size="50" class="text" onblur="f2(this)" onfocus="f3(this)">
+        </br></br>
+    	
+        <input type= "text" id="pfrName" placeholder = "Preferred Username" size="50" class="text" onblur="f2(this)" onfocus="f3(this)"></>
+        </br></br>
+        
+        	<select class= "gender" name="genders" id="genders" onblur="f2(this)" onfocus="f3(this)">
+        		<option value= " " disabled selected> Gender </option>
+            	<option value="Female"> Female </option>
+            	<option value="Male"> Male </option>
+            	<option value="Prefer not to Mention"> Prefer Not To Mention </option>
+        	</select></br></br>
+       
+        <input type= "password" id="password" name= "password" placeholder = "Password" size="50" class="text" onblur="f2(this)" onfocus="f3(this)"></>
+        </br></br>
+        
+        <input type= "email" id="email" placeholder = "Email" size="50" class="text" onblur="f2(this)" onfocus="f3(this)">
+        </br></br>
+    	
+        <input type= "text" id="address" placeholder = "Address" size="50" class="text" onblur="f2(this)" onfocus="f3(this)"></>
+        </br></br>
+        	
+        <textarea id = "interest" name="text" rows="4" cols="50" placeholder="Tell us about your interests!" onblur="f2(this)" onfocus="f3(this)"></textarea>
+        </br></br>
+
+        
+        <input class="button" type= "button" value = "Sign Up" onclick = "rslt()">
+        
+        <input class="button" type= "reset" value = "Reset" onclick= "f1(this)">
+	</form>
+</fieldset>
+</br></br>
+
+    <fieldset class="rst">
+        <p id= "result"> </p>
+    </fieldset>
+
+</center>
+<script>
+	function f1(input) {
+       document.getElementById("userName").style.border = '';
+              
+       document.getElementById("pfrName").style.border = '';
+
+       document.getElementById("genders").style.border = '';        
+        
+       document.getElementById("password").style.border = '';
+        
+       document.getElementById("email").style.border = '';
+        
+       document.getElementById("address").style.border = '';
+        
+       document.getElementById("interest").style.border = '';
+
+    }
+    
+    function f2(input) {
+		var a = input.value;
+
+		if (a == "" || a == null ){
+    		input.style.borderColor = "red";
+            return false;
+    	}
+
+		else {
+			f3(input);
+            return true;
+		}
+       
+    }
+    
+    function f3(input) {
+    	input.style.borderColor = "green";
+    }
+     
+    function f4(select){
+    var b = document.getElementById("genders").value;
+        
+    if (b = "Gender"){
+            document.getElementById("genders").style.borderColor = "red";
+            return false;
+        } 
+        
+        else {
+			f3(input);
+            return true;
+        }
+    }
+    
+    function rslt() {
+        
+            var un = document.getElementById("userName").value;
+       
+            var pun = document.getElementById("pfrName").value;
+        
+            var g = document.getElementById("genders").value;
+        
+            var pWord = document.getElementById("password").value;
+        
+            var em = document.getElementById("email").value;
+        
+            var adrs = document.getElementById("address").value;
+        
+            var ins = document.getElementById("interest").value;
+
+        
+        if (un != " " && pun != " " && g != " " && pWord != "" && em != " " && adrs != " " && ins != " " && em.includes("@")) {
+            
+             document.getElementById("result").innerHTML = "<fieldset>" 
+            + "RESULTS BASED ON SUBMITTED DATA: " 
+            + "</br></br>" 
+            + "You are:    " 
+            + un 
+            + "</br>" 
+            + "Your preferred name is:     " 
+            + pun 
+            + "</br>" 
+            + "Your gender is:    " 
+            + g 
+            + "</br>" 
+            + "Your password is:   " 
+            + pWord 
+            + "</br>" 
+            + "Your email is:    " 
+            + em 
+            + "</br>" 
+            + "Your address is:   " 
+            + adrs 
+            + "</br>" 
+            + "You're interested in: " 
+            + ins  ;
+                
+           
+      } else {
+               alert("Please fill up ALL the fields and enter a VALID email. ");
+            
+                document.getElementById("result").innerHTML = "<center>" + "Please try again :)" + "</center>";    
+    }
+}
+</script>
+</body>
+</html> 
+
+
+
