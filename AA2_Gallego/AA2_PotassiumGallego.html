@@ -168,7 +168,7 @@
         
         <input class="button" type= "submit" value = "Sign Up">
         
-        <input class="button" type= "reset" value = "Clear" onclick= "f1(this)">
+        <input class="button" type= "reset" value = "Clear" onclick= "f5(this)">
 	</form>
 </fieldset>
 </br></br>
@@ -193,8 +193,6 @@
        document.getElementById("address").style.border = '';
         
        document.getElementById("interest").style.border = '';
-		
-       document.getElementById("result").style.border = '';
 
     }
     
@@ -268,7 +266,7 @@
             + "Your email is:    " 
             + em 
             + "</br>" 
-            + "You live in:   " 
+            + "Your address is:   " 
             + adrs 
             + "</br>" 
             + "You're interested in: " 
@@ -278,6 +276,12 @@
            
     }
 }
+    
+    function f5(){
+			f1();
+				document.getElementById("result").innerHTML = " ";
+    }
+    
 </script>
 </body>
 </html> 
