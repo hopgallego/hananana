@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -186,33 +187,33 @@
          <div id ="fset">
             <fieldset>
                 <legend> Test your skills! </legend>
-	               <form>
+	               <form onsubmit="return checkResults()">
                        <h3 class = "instruction"> I. Multiple Choices </h3>
-                       
+
                             <h3 class= "instruction" >For numbers 1 and 2, determine the closest meaning of the capitalized word. </h3>
                                 
                                 <div class= "div">
                                 <p class= "question"> 1.  The lady had to GROPE in the dark for her keys. </p>
-                                  <input type="radio" name="q1" value="a. feel">
+                                  <input type="radio" name="q1" value="A" required>
                                     <label for = "q1c1"> a. feel </label><br>
-                                  <input type="radio" name="q1" value="b. arrange">
+                                  <input type="radio" name="q1" value="B">
                                     <label for = "q1c2"> b. arrange </label><br>
-                                  <input type="radio" name="q1" value="c. crawl">
+                                  <input type="radio" name="q1" value="C">
                                     <label for = "q1c3"> c. crawl </label><br>
-                                  <input type="radio" name="q1" value="d. tiptoe">
+                                  <input type="radio" name="q1" value="D">
                                     <label for = "q1c4"> d. tiptoe </label><br>
 									<p id="q1feed"></p>
                                 </div>
                        
                                 <div class= "div">
                                 <p class= "question"> 2. Kaiser promised not to DISCLOSE the movie’s surprise ending. </p>
-                                  <input type="radio" name="q2" value="a. predict">
+                                  <input type="radio" name="q2" value="A" required>
                                     <label for = "q2c1"> a. predict</label><br>
-                                  <input type="radio" name="q2" value="b. share">
+                                  <input type="radio" name="q2" value="B">
                                     <label for = "q2c2"> b. share </label><br>
-                                  <input type="radio" name="q2" value="c. reveal">
+                                  <input type="radio" name="q2" value="C">
                                     <label for = "q2c3"> c. reveal </label><br>
-                                  <input type="radio" name="q2" value="d. prevent">
+                                  <input type="radio" name="q2" value="D">
                                     <label for = "q2c4"> d. prevent </label><br>
 									<p id="q2feed"></p>
                                 </div>
@@ -221,26 +222,26 @@
 
                                 <div class= "div">
                                 <p class= "question">  3. The teacher’s assistant gave a CONCISE but clear report on the behavior of the children.</p>
-                                  <input type="radio" name="q3" value="a. short">
+                                  <input type="radio" name="q3" value="A" required>
                                     <label for = "q3c1"> a. short </label><br>
-                                  <input type="radio" name="q3" value="b. brief">
+                                  <input type="radio" name="q3" value="B">
                                     <label for = "q3c2"> b. brief </label><br>
-                                  <input type="radio" name="q3" value="c. complete">
+                                  <input type="radio" name="q3" value="C">
                                     <label for = "q3c3"> c. complete </label><br>
-                                  <input type="radio" name="q3" value="d. elaborate">
+                                  <input type="radio" name="q3" value="D">
                                     <label for = "q3c4"> d. elaborate </label><br>
 									<p id="q3feed"></p>
                                 </div>
                        
                                 <div class= "div">
                                 <p class= "question"> 4. In a cave, the hikers discovered REFUGE from the downpour.</p>
-                                  <input type="radio" name="q4" value="a. shelter">
+                                  <input type="radio" name="q4" value="A" required>
                                     <label for = "q4c1"> a. shelter </label><br>
-                                  <input type="radio" name="q4" value="b. danger">
+                                  <input type="radio" name="q4" value="B">
                                     <label for = "q4c2"> b. danger </label><br>
-                                  <input type="radio" name="q4" value="c. safety">
+                                  <input type="radio" name="q4" value="C">
                                     <label for = "q4c3"> c. safety </label><br>
-                                  <input type="radio" name="q4" value="d. damage">
+                                  <input type="radio" name="q4" value="D">
                                     <label for = "q4c4"> d. damage </label><br>
 									<p id="q4feed"></p>
                                 </div>
@@ -249,78 +250,78 @@
 
                                 <div class= "div">
                                 <p class= "question"> 5. _____ the glass fell, it _____ into pieces. </p>
-                                  <input type="radio" name="q5" value="a. When, shattered">
+                                  <input type="radio" name="q5" value="A" required>
                                     <label for = "q5c1"> a. When, shattered </label><br>
-                                  <input type="radio" name="q5" value="b. While, shatters">
+                                  <input type="radio" name="q5" value="B">
                                     <label for = "q5c2"> b. While, shatters </label><br>
-                                  <input type="radio" name="q5" value="c. When, is shattering">
+                                  <input type="radio" name="q5" value="C">
                                     <label for = "q5c3"> c. When, is shattering </label><br>
-                                  <input type="radio" name="q5" value="d. While, shatter">
+                                  <input type="radio" name="q5" value="D">
                                     <label for = "q5c4"> d. While, shatter </label><br>
 									<p id="q5feed"></p>
                                 </div>
 
                                 <div class= "div">
                                 <p class= "question"> 6. Via ______ as fast as she could the moment she ______ the noise.  </p>
-                                  <input type="radio" name="q6" value="a. ran, hears">
+                                  <input type="radio" name="q6" value="A" required>
                                     <label for = "q6c1"> a.  ran, hears </label><br>
-                                  <input type="radio" name="q6" value="b. run, heard">
+                                  <input type="radio" name="q6" value="B">
                                     <label for = "q6c2"> b. run, heard </label><br>
-                                  <input type="radio" name="q6" value="c. is running, heard">
+                                  <input type="radio" name="q6" value="C">
                                     <label for = "q6c3"> c. is running, heard </label><br>
-                                  <input type="radio" name="q6" value="d. ran, heard">
+                                  <input type="radio" name="q6" value="D">
                                     <label for = "q6c4"> d. ran, heard </label><br>		
 									<p id="q6feed"></p>	
                                 </div>
                     
                                 <div class= "div">
                                 <p class= "question">  7. You should be asleep already, _____? </p>
-                                  <input type="radio" name="q7" value=" a. must you">
+                                  <input type="radio" name="q7" value="A" required>
                                     <label for = "q7c1">  a. must you </label><br>
-                                  <input type="radio" name="q7" value="b. shouldn’t you">
+                                  <input type="radio" name="q7" value="B">
                                     <label for = "q7c2"> b. shouldn’t you </label><br>
-                                  <input type="radio" name="q7" value=" c. shall you">
+                                  <input type="radio" name="q7" value="C">
                                     <label for = "q7c3">  c. shall you </label><br>
-                                  <input type="radio" name="q7" value="d. wouldn’t you">
+                                  <input type="radio" name="q7" value="D">
                                     <label for = "q7c4">  d. wouldn’t you </label><br>	
 									<p id="q7feed"></p>
                                 </div>
 
                                 <div class= "div">
                                 <p class= "question"> 8. Her death was no surprise, as she was said ___ sick for a long time. </p>
-                                  <input type="radio" name="q8" value=" a. she was ">
+                                  <input type="radio" name="q8" value="A" required>
                                     <label for = "q8c1">   a. she was </label><br>
-                                  <input type="radio" name="q8" value=" b. she had been ">
+                                  <input type="radio" name="q8" value="B">
                                     <label for = "q8c2">  b. she had been </label><br>
-                                  <input type="radio" name="q8" value="  c. to be ">
+                                  <input type="radio" name="q8" value="C">
                                     <label for = "q8c3">   c. to be </label><br>
-                                  <input type="radio" name="q8" value="  d. to have been">
+                                  <input type="radio" name="q8" value="D">
                                     <label for = "q8c4">   d. to have been </label><br>
 									<p id="q8feed"></p>
                                 </div>
                                       
                                 <div class= "div">
                                 <p class= "question"> 9.  ________ was the weather like when you were on vacation? </p>
-                                  <input type="radio" name="q9" value=" a. What ">
+                                  <input type="radio" name="q9" value="A" required>
                                     <label for = "q9c1">   a. What </label><br>
-                                  <input type="radio" name="q9" value=" b. Where">
+                                  <input type="radio" name="q9" value="B">
                                     <label for = "q9c2">  b. Where </label><br>
-                                  <input type="radio" name="q9" value=" c. When ">
+                                  <input type="radio" name="q9" value="C">
                                     <label for = "q9c3">   c. When </label><br>
-                                  <input type="radio" name="q9" value=" d. How ">
+                                  <input type="radio" name="q9" value="D">
                                     <label for = "q9c4">   d. How </label><br>
 									<p id="q9feed"></p>
                                 </div>
 
                                 <div class= "div">
                                 <p class= "question"> 10. _________ any further information about school, do not hesitate to contact me. </p>
-                                  <input type="radio" name="q10" value=" a. Should you need ">
+                                  <input type="radio" name="q10" value="A" required>
                                     <label for = "q10c1">   a. Should you need </label><br>
-                                  <input type="radio" name="q10" value=" b. You should need">
+                                  <input type="radio" name="q10" value="B">
                                     <label for = "q10c2">  b. You should need </label><br>
-                                  <input type="radio" name="q10" value=" c. Unless you need ">
+                                  <input type="radio" name="q10" value="C">
                                     <label for = "q10c3">   c. Unless you need </label><br>
-                                  <input type="radio" name="q10" value=" d. You will need ">
+                                  <input type="radio" name="q10" value="D">
                                     <label for = "q10c4">   d. You will need </label><br>
 									<p id="q10feed"></p>
                                 </div>
@@ -329,39 +330,39 @@
                        
                                 <div class= "div">
                                 <p class= "question"> 11. flock: bird :: ____:____   </p>
-                                  <input type="radio" name="q11" value="  a. school : fish ">
+                                  <input type="radio" name="q11" value="A" required>
                                     <label for = "q11c1">   a. school : fish </label><br>
-                                  <input type="radio" name="q11" value="  b. herd : dog">
+                                  <input type="radio" name="q11" value="B">
                                     <label for = "q11c2">  b. herd : dog </label><br>
-                                  <input type="radio" name="q11" value="  c. den : lion ">
+                                  <input type="radio" name="q11" value="C">
                                     <label for = "q11c3">  c. den : lion </label><br>
-                                  <input type="radio" name="q11" value="  d. pride : tiger ">
+                                  <input type="radio" name="q11" value="D">
                                     <label for = "q11c4">  d. pride : tiger </label><br>
 									<p id="q11feed"></p>
                                </div>
     
                                 <div class= "div">
                                 <p class= "question"> 12. joyful: cheerful :: ____:____     </p>
-                                  <input type="radio" name="q12" value="  a. placid  : furious ">
+                                  <input type="radio" name="q12" value="A" required>
                                     <label for = "q12c1">   a. placid  : furious </label><br>
-                                  <input type="radio" name="q12" value="  b. shocked : nonchalant">
+                                  <input type="radio" name="q12" value="B">
                                     <label for = "q12c2">  b. shocked : nonchalant </label><br>
-                                  <input type="radio" name="q12" value="  c. sorrowful : dejected ">
+                                  <input type="radio" name="q12" value="C">
                                     <label for = "q12c3">   c. sorrowful : dejected </label><br>
-                                  <input type="radio" name="q12" value="  d. nervous : tranquil ">
+                                  <input type="radio" name="q12" value="D">
                                     <label for = "q12c4">   d. nervous : tranquil </label><br>
 									<p id="q12feed"></p>
                                </div>
 
                                 <div class= "div">
                                 <p class= "question"> 13. den: lion :: ____:____     </p>
-                                  <input type="radio" name="q13" value="  a. nest  : cat ">
+                                  <input type="radio" name="q13" value="A" required>
                                     <label for = "q13c1">   a. nest  : cat </label><br>
-                                  <input type="radio" name="q13" value="  b. kennel  : duck ">
+                                  <input type="radio" name="q13" value="B">
                                     <label for = "q13c2">  b. kennel  : duck </label><br>
-                                  <input type="radio" name="q13" value="  c. lair : ostrich ">
+                                  <input type="radio" name="q13" value="C">
                                     <label for = "q13c3">   c. lair : ostrich</label><br>
-                                  <input type="radio" name="q13" value="  d. coop : chicken ">
+                                  <input type="radio" name="q13" value="D">
                                     <label for = "q13c4">   d. coop : chicken </label><br>
 									<p id="q13feed"></p>
                                 </div>
@@ -370,26 +371,26 @@
 
                                 <div class= "div">
                                 <p class= "question"> 14. Amongst the great gray gravel, a big bulky boulder is found.</p>
-                                  <input type="radio" name="q14" value="  a. Hyperbole ">
+                                  <input type="radio" name="q14" value="A" required>
                                     <label for = "q14c1">   a. Hyperbole </label><br>
-                                  <input type="radio" name="q14" value="  b. Metaphor ">
+                                  <input type="radio" name="q14" value="B">
                                     <label for = "q14c2">  b. Metaphor </label><br>
-                                  <input type="radio" name="q14" value="  c. Alliteration ">
+                                  <input type="radio" name="q14" value="C">
                                     <label for = "q14c3">   c. Alliteration </label><br>
-                                  <input type="radio" name="q14" value="  d. Personification ">
+                                  <input type="radio" name="q14" value="D">
                                     <label for = "q14c4">   d. Personification </label><br>
 									<p id="q14feed"></p>
                                 </div>
 
                                <div class= "div">
                                <p class= "question"> 15. His face was pale as if he hadn't been sleeping for a week. </p>
-                                  <input type="radio" name="q15" value="  a. Alliteration ">
+                                  <input type="radio" name="q15" value="A" required>
                                     <label for = "q15c1">   a. Alliteration </label><br>
-                                  <input type="radio" name="q15" value="  b. Simile ">
+                                  <input type="radio" name="q15" value="B">
                                     <label for = "q15c2">  b. Simile </label><br>
-                                  <input type="radio" name="q15" value="  c. Personification ">
+                                  <input type="radio" name="q15" value="C">
                                     <label for = "q15c3">   c. Personification </label><br>
-                                  <input type="radio" name="q15" value="  d. Metaphor ">
+                                  <input type="radio" name="q15" value="D">
                                     <label for = "q15c4">   d. Metaphor </label><br>
 									<p id="q15feed"></p>
                                </div>
@@ -398,45 +399,44 @@
                                 
                                <div class= "div">
                                <p class="question">16. A figure of speech that describes one item with another using the words "like" or "as".</p><br>
-							      <input class= "fitb" type="text" id="q16"><br>
+							      <input class= "fitb" type="text" id="q16" required><br>
                    <p id="q16wrong"></p><br>
 	
 						       <p class="question">17. A term that joins clauses / sentences or groups words together inside a clause.</p><br>
-                                  <input class= "fitb" type="text" id="q17"><br>
+                                  <input class= "fitb" type="text" id="q17" required><br>
                    <p id="q17wrong"></p><br>
                        
                                 <p class="question">18.  a figure of speech that refers to the use of words that imitate or suggest the sounds associated with the objects or actions they refer to.</p><br>
-                                  <input class= "fitb" type="text" id="q18"><br>
+                                  <input class= "fitb" type="text" id="q18" required><br>
                    <p id="q18wrong"></p><br>
                                 
                                 <p class="question">19.   A word or phrase with a deeper meaning compared to its literal definition. </p><br>
-                                  <input class= "fitb" type="text" id="q19"><br>
+                                  <input class= "fitb" type="text" id="q19" required><br>
                    <p id="q19wrong"></p><br>
                        
                                 <p class="question">20. The use of expression to convey meaning though it usually conveys opposite information, usually for comedic or aggressive effect.</p><br>
-                                  <input class= "fitb" type="text" id="q20"><br>
+                                  <input class= "fitb" type="text" id="q20" required><br>
                    <p id="q20wrong"></p><br><br><br>
                    </div>
                    
-                       <button type="button" class = "button" onclick="checkResults(totalscore)">Check results!</button>
+                       <button type="submit" class = "button">Check results!</button>
                        <button type="reset" class = "button" onclick="clearForm()">Clear</button>
                        
                    <p id="score"> </p>
               		</form>
             </fieldset>
 <script>
-    var totalscore;
-			function checkResults(totalscore) {
-				totalscore = 0;
-				if (document.querySelector('input[name="q1"]:checked').value == "a. feel") {
-					document.getElementById("q1feed").innerHTML = "Your answer is CORRECT!";
-                    document.getElementById("q1feed").style.color= "green";
-					totalscore++;
+    	function checkResults() {
+		var totalscore = 0;
+			if (document.querySelector('input[name="q1"]:checked').value == "A") {
+				document.getElementById("q1feed").innerHTML = "Your answer is CORRECT!";
+                    	document.getElementById("q1feed").style.color= "green";
+				totalscore++;
 				} else {
 					document.getElementById("q1feed").innerHTML = "Your answer is INCORRECT! The answer is A.";
                     document.getElementById("q1feed").style.color= "red";
 				}
-				if (document.querySelector('input[name="q2"]:checked').value == "c. reveal") {
+				if (document.querySelector('input[name="q2"]:checked').value == "C") {
 					document.getElementById("q2feed").innerHTML = "Your answer is CORRECT!";
                     document.getElementById("q2feed").style.color= "green";
 					totalscore++;
@@ -444,7 +444,7 @@
 					document.getElementById("q2feed").innerHTML = "Your answer is INCORRECT! The answer is C.";
                     document.getElementById("q2feed").style.color= "red";
 				}
-				if (document.querySelector('input[name="q3"]:checked').value == "b. brief") {
+				if (document.querySelector('input[name="q3"]:checked').value == "B") {
 					document.getElementById("q3feed").innerHTML = "Your answer is CORRECT!";
                     document.getElementById("q3feed").style.color= "green";
 					totalscore++;
@@ -452,7 +452,7 @@
 					document.getElementById("q3feed").innerHTML = "Your answer is INCORRECT! The answer is B.";
                     document.getElementById("q3feed").style.color= "red";
 				}
-				if (document.querySelector('input[name="q4"]:checked').value == "a. shelter") {
+				if (document.querySelector('input[name="q4"]:checked').value == "A") {
 					document.getElementById("q4feed").innerHTML = "Your answer is CORRECT!";
                     document.getElementById("q4feed").style.color= "green";
 					totalscore++;
@@ -460,7 +460,7 @@
 					document.getElementById("q4feed").innerHTML = "Your answer is INCORRECT! The answer is A.";
                     document.getElementById("q4feed").style.color= "red";
 				}
-				if (document.querySelector('input[name="q5"]:checked').value == "a. When, shattered") {
+				if (document.querySelector('input[name="q5"]:checked').value == "A") {
 					document.getElementById("q5feed").innerHTML = "Your answer is CORRECT!";
                     document.getElementById("q5feed").style.color= "green";
 					totalscore++;
@@ -468,7 +468,7 @@
 					document.getElementById("q5feed").innerHTML = "Your answer is INCORRECT! The answer is A.";
                     document.getElementById("q5feed").style.color= "red";
 				}
-				if (document.querySelector('input[name="q6"]:checked').value == "d. ran, heard") {
+				if (document.querySelector('input[name="q6"]:checked').value == "D") {
 					document.getElementById("q6feed").innerHTML = "Your answer is CORRECT!";
                     document.getElementById("q6feed").style.color= "green";
 					totalscore++;
@@ -476,7 +476,7 @@
 					document.getElementById("q6feed").innerHTML = "Your answer is INCORRECT! The answer is D.";
                     document.getElementById("q6feed").style.color= "red";
 				}
-				if (document.querySelector('input[name="q7"]:checked').value == "b. shouldn’t you") {
+				if (document.querySelector('input[name="q7"]:checked').value == "B") {
 					document.getElementById("q7feed").innerHTML = "Your answer is CORRECT!";
                     document.getElementById("q7feed").style.color= "green";
 					totalscore++;
@@ -484,7 +484,7 @@
 					document.getElementById("q7feed").innerHTML = "Your answer is INCORRECT! The answer is B.";
                     document.getElementById("q7feed").style.color= "red";
 				}
-				if (document.querySelector('input[name="q8"]:checked').value == "  d. to have been") {
+				if (document.querySelector('input[name="q8"]:checked').value == "D") {
 					document.getElementById("q8feed").innerHTML = "Your answer is CORRECT!";
                     document.getElementById("q8feed").style.color= "green";
 					totalscore++;
@@ -492,7 +492,7 @@
 					document.getElementById("q8feed").innerHTML = "Your answer is INCORRECT! The answer is D.";
                     document.getElementById("q8feed").style.color= "red";
 				}
-				if (document.querySelector('input[name="q9"]:checked').value == " a. What ") {
+				if (document.querySelector('input[name="q9"]:checked').value == "A") {
 					document.getElementById("q9feed").innerHTML = "Your answer is CORRECT!";
                     document.getElementById("q9feed").style.color= "green";
 					totalscore++;
@@ -500,7 +500,7 @@
 					document.getElementById("q9feed").innerHTML = "Your answer is INCORRECT! The answer is A.";
                     document.getElementById("q9feed").style.color= "red";
 				}
-				if (document.querySelector('input[name="q10"]:checked').value == " a. Should you need ") {
+				if (document.querySelector('input[name="q10"]:checked').value == "A") {
 					document.getElementById("q10feed").innerHTML = "Your answer is CORRECT!";
                     document.getElementById("q10feed").style.color= "green";
 					totalscore++;
@@ -508,7 +508,7 @@
 					document.getElementById("q10feed").innerHTML = "Your answer is INCORRECT! The answer is A.";
                     document.getElementById("q10feed").style.color= "red";
 				}
-				if (document.querySelector('input[name="q11"]:checked').value == "  a. school : fish ") {
+				if (document.querySelector('input[name="q11"]:checked').value == "A") {
 					document.getElementById("q11feed").innerHTML = "Your answer is CORRECT!";
                     document.getElementById("q11feed").style.color= "green";
 					totalscore++;
@@ -516,7 +516,7 @@
 					document.getElementById("q11feed").innerHTML = "Your answer is INCORRECT! The answer is A.";
                     document.getElementById("q11feed").style.color= "red";
 				} 
-				if (document.querySelector('input[name="q12"]:checked').value == "  c. sorrowful : dejected ") {
+				if (document.querySelector('input[name="q12"]:checked').value == "C") {
 					document.getElementById("q12feed").innerHTML = "Your answer is CORRECT!";
                     document.getElementById("q12feed").style.color= "green";
 					totalscore++;
@@ -524,7 +524,7 @@
 					document.getElementById("q12feed").innerHTML = "Your answer is INCORRECT! The answer is C.";
                     document.getElementById("q12feed").style.color= "red";
 				}
-				if (document.querySelector('input[name="q13"]:checked').value == "  d. coop : chicken ") {
+				if (document.querySelector('input[name="q13"]:checked').value == "D") {
 					document.getElementById("q13feed").innerHTML = "Your answer is CORRECT!";
                     document.getElementById("q13feed").style.color= "green";
 					totalscore++;
@@ -532,7 +532,7 @@
 					document.getElementById("q13feed").innerHTML = "Your answer is INCORRECT! The answer is D.";
                     document.getElementById("q13feed").style.color= "red";
 				}
-				if (document.querySelector('input[name="q14"]:checked').value == "  c. Alliteration ") {
+				if (document.querySelector('input[name="q14"]:checked').value == "C") {
 					document.getElementById("q14feed").innerHTML = "Your answer is CORRECT!";
                     document.getElementById("q14feed").style.color= "green";
 					totalscore++;
@@ -540,7 +540,7 @@
 					document.getElementById("q14feed").innerHTML = "Your answer is INCORRECT! The answer is C.";
                     document.getElementById("q14feed").style.color= "red";
 				}
-				if (document.querySelector('input[name="q15"]:checked').value == "  b. Simile ") {
+				if (document.querySelector('input[name="q15"]:checked').value == "B") {
 					document.getElementById("q15feed").innerHTML = "Your answer is CORRECT!";
                     document.getElementById("q15feed").style.color= "green";
 					totalscore++;
@@ -587,17 +587,16 @@
 				} else {
 					document.getElementById("q20").style.backgroundColor="pink";
 					document.getElementById("q20wrong").innerHTML = "Your answer is INCORRECT! The correct answer is: Irony.";
-                    document.getElementById("q20wrong").style.color= "red";
+                    		document.getElementById("q20wrong").style.color= "red";
 				}
-				print(totalscore);
-			}
-			function print(totalscore) {
+
 				document.getElementById("score").innerHTML = ("That's a wrap! You got " + totalscore + " out of 20!");
-			}
+				return false;
+		}
             
             function clearForm(){
                 document.getElementById("score").innerHTML= ' ';
-				document.getElementById("q1feed").innerHTML= ' ';
+		        document.getElementById("q1feed").innerHTML= ' ';
                 document.getElementById("q2feed").innerHTML= ' ';
                 document.getElementById("q3feed").innerHTML= ' ';
                 document.getElementById("q4feed").innerHTML= ' ';
@@ -611,7 +610,7 @@
                 document.getElementById("q12feed").innerHTML= ' ';
                 document.getElementById("q13feed").innerHTML= ' ';
                 document.getElementById("q14feed").innerHTML= ' ';
-			    document.getElementById("q15feed").innerHTML= ' ';
+		        document.getElementById("q15feed").innerHTML= ' ';
                 document.getElementById("q16wrong").innerHTML= ' ';
                 document.getElementById("q16").style.backgroundColor='white';
                 document.getElementById("q17wrong").innerHTML= ' ';
